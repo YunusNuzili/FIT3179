@@ -26,7 +26,7 @@ BRA,Brazil,America,Southern Hemisphere,High,LAC,87,41.306376
 BRB,Barbados,America,Northern Hemisphere,High,LAC,70,33.58537775
 BRN,Brunei,Asia,Northern Hemisphere,Very High,EAP,51,
 BTN,Bhutan,Asia,Northern Hemisphere,Medium,SA,127,19.95514103
-BWA,Botswana,Africa,Southern Hemisphere,Medium,SSA,117,
+BWA,Botswana,Africa,Southern Hemisphere,Medium,SSA,117,0
 CAF,Central African Republic,Africa,Northern Hemisphere,Low,SSA,188,49.19459
 CAN,Canada,America,Northern Hemisphere,Very High,,15,17.077
 CHE,Switzerland,Europe,Northern Hemisphere,Very High,,1,15.58172
@@ -35,7 +35,7 @@ CHN,China,Asia,Northern Hemisphere,High,EAP,79,27.391
 CIV,Ivory Coast,Africa,Northern Hemisphere,Medium,SSA,159,27.04145
 CMR,Cameroon,Africa,Northern Hemisphere,Medium,SSA,151,34.98911
 COD,The Democratic Republic of the Congo,Africa,Northern Hemisphere,Low,SSA,179,27.63249
-COG,Congo,Africa,Southern Hemisphere,Medium,SSA,153,30.99925
+COG,Congo (Kinshasa),Africa,Southern Hemisphere,Medium,SSA,153,30.99925
 COL,Colombia,America,Northern Hemisphere,High,LAC,88,37.712196
 COM,Comoros,Africa,Southern Hemisphere,Medium,SSA,156,56.01338
 CPV,Cabo Verde,Africa,Northern Hemisphere,Medium,SSA,128,
