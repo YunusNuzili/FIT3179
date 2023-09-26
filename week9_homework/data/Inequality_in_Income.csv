@@ -95,7 +95,7 @@ KIR,Kiribati,Oceania,Northern Hemisphere,Medium,EAP,136,19.35687
 KNA,Saint Kitts and Nevis,America,Northern Hemisphere,High,LAC,75,
 KOR,South Korea,Asia,Northern Hemisphere,Very High,,19,16.13
 KWT,Kuwait,Asia,Northern Hemisphere,Very High,AS,50,
-LAO,Lao,Asia,Northern Hemisphere,Medium,EAP,140,20.58334
+LAO,Laos,Asia,Northern Hemisphere,Medium,EAP,140,20.58334
 LBN,Lebanon,Asia,Northern Hemisphere,High,AS,112,
 LBR,Liberia,Africa,Northern Hemisphere,Low,SSA,178,19.74577
 LBY,Libya,Africa,Northern Hemisphere,High,AS,104,
@@ -147,7 +147,7 @@ PRY,Paraguay,America,Southern Hemisphere,High,LAC,105,30.441064
 PSE,"Palestine, State of",Asia,Northern Hemisphere,High,AS,106,31.64
 QAT,Qatar,Asia,Northern Hemisphere,Very High,AS,42,
 ROU,Romania,Europe,Northern Hemisphere,Very High,,53,20.89714
-RUS,Russian Federation,Europe,Northern Hemisphere,Very High,,52,17.645
+RUS,Russia,Europe,Northern Hemisphere,Very High,,52,17.645
 RWA,Rwanda,Africa,Southern Hemisphere,Low,SSA,165,27.19248
 SAU,Saudi Arabia,Asia,Northern Hemisphere,Very High,AS,35,
 SDN,Sudan,Africa,Northern Hemisphere,Low,AS,172,33
@@ -167,7 +167,7 @@ SVN,Slovenia,Europe,Northern Hemisphere,Very High,,23,8.30524
 SWE,Sweden,Europe,Northern Hemisphere,Very High,,7,12.77164
 SWZ,Eswatini,Africa,Southern Hemisphere,Medium,SSA,144,37.9
 SYC,Seychelles,Africa,Southern Hemisphere,High,SSA,72,29.34535638
-SYR,Syrian Arab Republic,Asia,Northern Hemisphere,Medium,AS,150,
+SYR,Syria,Asia,Northern Hemisphere,Medium,AS,150,
 TCD,Chad,Africa,Northern Hemisphere,Low,SSA,190,26.50219
 TGO,Togo,Africa,Northern Hemisphere,Low,SSA,162,26.85326
 THA,Thailand,Asia,Northern Hemisphere,Very High,EAP,66,18.7899
@@ -187,7 +187,7 @@ USA,United States of America,America,Northern Hemisphere,Very High,,21,23.222
 UZB,Uzbekistan,Asia,Northern Hemisphere,High,ECA,101,
 VCT,Saint Vincent and the Grenadines,America,Northern Hemisphere,High,LAC,89,
 VEN,Venezuela,America,Northern Hemisphere,Medium,LAC,120,21
-VNM,Viet Nam,Asia,Northern Hemisphere,High,EAP,115,14.60094
+VNM,VietNam,Asia,Northern Hemisphere,High,EAP,115,14.60094
 VUT,Vanuatu,Oceania,Southern Hemisphere,Medium,EAP,140,19.68256999
 WSM,Samoa,Oceania,Southern Hemisphere,High,EAP,111,21.87008
 YEM,Yemen,Asia,Northern Hemisphere,Low,AS,183,21.80323
