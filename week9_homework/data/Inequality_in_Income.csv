@@ -27,7 +27,7 @@ BRB,Barbados,America,Northern Hemisphere,High,LAC,70,33.58537775
 BRN,Brunei,Asia,Northern Hemisphere,Very High,EAP,51,
 BTN,Bhutan,Asia,Northern Hemisphere,Medium,SA,127,19.95514103
 BWA,Botswana,Africa,Southern Hemisphere,Medium,SSA,117,0
-CAF,Central African Republic,Africa,Northern Hemisphere,Low,SSA,188,49.19459
+CAF,Central African Rep.,Africa,Northern Hemisphere,Low,SSA,188,49.19459
 CAN,Canada,America,Northern Hemisphere,Very High,,15,17.077
 CHE,Switzerland,Europe,Northern Hemisphere,Very High,,1,15.58172
 CHL,Chile,America,Southern Hemisphere,Very High,LAC,42,28.273047
@@ -35,7 +35,7 @@ CHN,China,Asia,Northern Hemisphere,High,EAP,79,27.391
 CIV,Ivory Coast,Africa,Northern Hemisphere,Medium,SSA,159,27.04145
 CMR,Cameroon,Africa,Northern Hemisphere,Medium,SSA,151,34.98911
 COD,Dem. Rep. Congo,Africa,Northern Hemisphere,Low,SSA,179,27.63249
-COG,"Congo, Rep.",Africa,Southern Hemisphere,Medium,SSA,153,30.99925
+COG,Congo,Africa,Southern Hemisphere,Medium,SSA,153,30.99925
 COL,Colombia,America,Northern Hemisphere,High,LAC,88,37.712196
 COM,Comoros,Africa,Southern Hemisphere,Medium,SSA,156,56.01338
 CPV,Cabo Verde,Africa,Northern Hemisphere,Medium,SSA,128,
@@ -159,7 +159,7 @@ SLV,El Salvador,America,Northern Hemisphere,Medium,LAC,125,22.481244
 SMR,San Marino,Europe,Northern Hemisphere,Very High,,44,
 SOM,Somalia,Africa,Northern Hemisphere,,AS,,24.35
 SRB,Serbia,Europe,Northern Hemisphere,Very High,ECA,63,18.49592
-SSD,South Sudan,Africa,Northern Hemisphere,Low,SSA,191,32.25296
+SSD,S. Sudan,Africa,Northern Hemisphere,Low,SSA,191,32.25296
 STP,Sao Tome and Principe,Africa,Northern Hemisphere,Medium,SSA,138,26.209
 SUR,Suriname,America,Northern Hemisphere,High,LAC,99,46.69631
 SVK,Slovakia,Europe,Northern Hemisphere,Very High,,45,9.06554
