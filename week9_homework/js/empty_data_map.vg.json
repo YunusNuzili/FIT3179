@@ -29,19 +29,19 @@
               "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/week9_homework/data/Inequality_in_Income.csv"
             },
             "key": "Country",
-            "fields": ["Inequality in income (2021)"]
+            "fields": ["Inequality"]
           }
         }
       ],
       "mark": {"type": "geoshape", "stroke": "white"},
       "encoding": {
         "color": {
-          "field": "Inequality in income (2021)",
+          "field": "Inequality",
           "type": "quantitative"
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "Inequality in income (2021)", "type": "quantitative"}
+          {"field": "Inequality", "type": "quantitative"}
         ]
       }
     }
