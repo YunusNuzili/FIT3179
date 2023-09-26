@@ -32,7 +32,7 @@ CAN,Canada,America,Northern Hemisphere,Very High,,15,17.077
 CHE,Switzerland,Europe,Northern Hemisphere,Very High,,1,15.58172
 CHL,Chile,America,Southern Hemisphere,Very High,LAC,42,28.273047
 CHN,China,Asia,Northern Hemisphere,High,EAP,79,27.391
-CIV,Ivory Coast,Africa,Northern Hemisphere,Medium,SSA,159,27.04145
+CIV,Côte d'Ivoire,Africa,Northern Hemisphere,Medium,SSA,159,27.04145
 CMR,Cameroon,Africa,Northern Hemisphere,Medium,SSA,151,34.98911
 COD,Dem. Rep. Congo,Africa,Northern Hemisphere,Low,SSA,179,27.63249
 COG,Congo,Africa,Southern Hemisphere,Medium,SSA,153,30.99925
@@ -187,7 +187,7 @@ USA,United States of America,America,Northern Hemisphere,Very High,,21,23.222
 UZB,Uzbekistan,Asia,Northern Hemisphere,High,ECA,101,
 VCT,Saint Vincent and the Grenadines,America,Northern Hemisphere,High,LAC,89,
 VEN,Venezuela,America,Northern Hemisphere,Medium,LAC,120,21
-VNM,VietNam,Asia,Northern Hemisphere,High,EAP,115,14.60094
+VNM,Vietnam,Asia,Northern Hemisphere,High,EAP,115,14.60094
 VUT,Vanuatu,Oceania,Southern Hemisphere,Medium,EAP,140,19.68256999
 WSM,Samoa,Oceania,Southern Hemisphere,High,EAP,111,21.87008
 YEM,Yemen,Asia,Northern Hemisphere,Low,AS,183,21.80323
