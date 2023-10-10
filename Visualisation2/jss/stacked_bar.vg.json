@@ -1,0 +1,12 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 600,
+    "data": {"url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC2.csv"},
+    "mark": {"type": "bar"},
+    "encoding": {
+      "x": {"field": "SPEED_ZONE", "type": "nominal"},
+      "y": {"aggregate": "count", "field": "OBJECTID"},
+      "color": {"field": "SEVERITY"}
+    }
+  }
