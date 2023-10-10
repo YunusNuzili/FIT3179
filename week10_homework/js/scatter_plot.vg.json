@@ -1,0 +1,63 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"
+    },
+    "transform": [
+        {
+            "filter": "datum.Year==minYear"
+        }
+    ],
+    "params": [
+        {
+          "name": "minYear",
+          "value": 2017,
+          "bind": {
+            "input": "range",
+            "min": 2017,
+            "max": 2019,
+            "step": 1,
+            "name": "Year:  "
+          }
+        }
+    ],
+        "width": 500,
+        "height": 250,
+        "layer" : [{
+            "mark": "text",
+              "encoding": {
+                  "x": {"field": "LONGITUDE", "type": "quantitative",
+                  "scale": {"domain" : [140,150]}},
+                  "y": {"field": "LATITUDE", "type": "quantitative",
+                  "scale": {"domain" : [-39, -34]}},
+                  "text": {"value": "Most Accidents in CBD"},
+                  "size": {"value": 10},
+                  "color": {"condition" : {
+                    "test": "datum['LATITUDE'] == -36.01166 & datum['LONGITUDE'] == 146.61912",
+                    "value": "red"
+                  },
+                  "value": null}
+                }
+          },{
+        "mark": {"type":"point","filled": true},
+        "encoding": {
+          "x": {
+            "field": "LONGITUDE",
+            "type": "quantitative",
+            "axis": {"grid": false},
+            "scale": {"domain" : [140,150]}
+          },
+          "y": {
+            "field": "LATITUDE", 
+            "type": "quantitative",
+            "axis": {"grid": false},
+            "scale": {"domain" : [-39, -34]}},
+          "tooltip" : [
+            {"field": "OBJECTID", 
+            "type":"quantitative", 
+            "title":"Number of Accidents"}
+          ],
+          "size": {"value": 3},
+          "color": {"value": "lightblue"}
+        }}]
+      }
