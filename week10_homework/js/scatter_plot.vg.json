@@ -23,6 +23,7 @@
     ],
         "width": 500,
         "height": 250,
+    "title": "Accidents in Victoria",
         "layer" : [{
             "mark": "text",
               "encoding": {
