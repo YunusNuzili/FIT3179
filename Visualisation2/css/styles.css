@@ -3,7 +3,7 @@ body *{
   }
   
   h1 {
-    font-weight: 55;
+    font-weight: 57;
     font-family: 'Times New Roman', Times, serif;
   }
   
@@ -12,38 +12,38 @@ body *{
   }
   
   .page {
-    width: 900px;
+    width: 1000px;
     height: 3000px;
     background-color: rgb(255, 255, 255);
     margin: auto;
-    padding-top: 28px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-top: 30px;
+    padding-left: 19px;
+    padding-right: 19px;
 
   }
   .page_blank{
     background-color: lightgray;
-    width: 900px;
-    height: 28px;
+    width: 100px;
+    height: 30px;
     margin: auto;
   }
 
   .page_blank2{
     background-color: rgb(251, 234, 150);
-    width: 900px;
-    height: 3px;
+    width: 1000px;
+    height: 4.5px;
     margin: auto;
   }
 
   .page_temp {
-    width: 900px;
-    height: 55px;
+    width: 1000px;
+    height: 57px;
     background-color: rgb(251, 234, 150);
     margin: auto;
-    padding-top: 17px;
-    padding-left: 17px;
-    padding-right: 17px;
-    padding-bottom: 25px;
+    padding-top: 19px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 28px;
   }
 
   h1{text-align: center;}
@@ -54,21 +54,21 @@ body *{
   
   
   .description-right {
-    padding-left: 11px;
+    padding-left: 12.5px;
   }
   
   .description-left {
-    padding-right: 55px;
+    padding-right: 57px;
   }
 
   .description-top {
-    padding-top: 11px;
+    padding-top: 12.5px;
   }
   
   .pure-g {
-    margin-top: 5.5px;
-    margin-bottom: 22px;
-    margin-left: 11px;
+    margin-top: 7px;
+    margin-bottom: 24px;
+    margin-left: 12.5px;
   }
   
   .small-font {
