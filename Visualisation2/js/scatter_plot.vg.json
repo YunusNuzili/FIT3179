@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"
+    },
+    "transform": [
+        {
+            "filter": "datum.Year==minYear"
+        }
+    ],
+    "params": [
+        {
+          "name": "minYear",
+          "value": 2017,
+          "bind": {
+            "input": "range",
+            "min": 2017,
+            "max": 2019,
+            "step": 1,
+            "name": "Year:  "
+          }
+        }
+    ],
+        "width": 700,
+        "height": 400,
+        "title": "Accidents in Victoria",
+        "mark": {"type":"point","filled": true},
+        "encoding": {
+          "x": {
+            "field": "LONGITUDE",
+            "type": "quantitative",
+            "axis": {"grid": false},
+            "scale": {"domain" : [140,150]}
+          },
+          "y": {
+            "field": "LATITUDE", 
+            "type": "quantitative",
+            "axis": {"grid": false},
+            "scale": {"domain" : [-39, -34]}},
+          "tooltip" : [
+            {"field": "LGA_NAME", 
+            "type":"nominal", 
+            "title":"Suburb"}
+          ],
+          "size": {"value": 3},
+          "color": {
+              "field": "DEG_URBAN_NAME",
+              "type": "nominal",
+              "scale": {"range":["yellow","purple","orange","red","#0b70ab","#665c5a","#ec539d"]},
+              "legend": {
+                  "title": "Area",
+                  "orient": "top-right"
+              }
+          }
+        }
+      }

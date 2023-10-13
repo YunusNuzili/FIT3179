@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"
+    },
+    "vconcat": [
+      {
+        "width": 700,
+        "height": 320,
+        "mark": {"type": "bar", "width":{"band": 0.1}},
+        "transform": [
+          {
+            "filter": "datum.DAY_OF_WEEK != ''"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "DAY_OF_WEEK",
+            "type": "nominal",
+            "axis": {"title": "Day of Week"},
+            "scale": {"domain": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]}
+          },
+          "y": {"aggregate": "count",
+          "field": "OBJECTID", 
+          "type": "quantitative",
+        "axis":{"title":"Number of Accidents"}},
+          "tooltip" : [
+            {"aggregate":"count",
+            "field": "OBJECTID", 
+            "type":"quantitative", 
+            "title":"Number of Accidents"}
+          ],
+          "color": {"value": "orange"}
+        }
+      }
+    ]
+  }

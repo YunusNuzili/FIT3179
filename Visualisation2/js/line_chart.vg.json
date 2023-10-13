@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {"url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"},
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "encoding": {
+      "x": {"field": "Month", 
+      "type": "nominal",
+    "timeUnit": "month"},
+      "y": {"aggregate":"count", 
+      "field": "OBJECT_ID", 
+      "type": "quantitative",
+    "scale": {"domain": [1500,3000]}},
+      
+
+      "color": {"value": "red"}
+    }
+  }
+  
