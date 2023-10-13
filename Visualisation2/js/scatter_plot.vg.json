@@ -21,8 +21,8 @@
           }
         }
     ],
-        "width": 388,
-        "height": 222,
+        "width": 410,
+        "height": 235,
         "title": "Accidents in Victoria",
         "mark": {"type":"point","filled": true},
         "encoding": {
@@ -50,8 +50,8 @@
               "legend": {
                   "title": "Area",
                   "orient": "top-right",
-                  "labelFontSize": 5,
-                  "symbolSize": 50
+                  "labelFontSize": 6.5,
+                  "symbolSize": 61
               }
           }
         }
