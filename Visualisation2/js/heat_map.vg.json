@@ -4,7 +4,7 @@
         "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"
     },
     "width": 330,
-    "height": 420,
+    "height": 490,
     "title": "Accidents in each week and hour",
     "config": {
         "view": {
