@@ -3,8 +3,8 @@
     "data": {
         "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"
     },
-    "width": 400,
-    "height": 500,
+    "width": 330,
+    "height": 420,
     "title": "Accidents in each week and hour",
     "config": {
         "view": {
@@ -38,8 +38,22 @@
             "aggregate": "count",
             "type": "quantitative",
             "legend": {
-                "title": null
+                "title": "Accident Numbers"
             }
-        }
+        },
+        "tooltip":[{
+            "field": "DAY_OF_WEEK",
+            "type": "nominal",
+            "title": "Day of Week"
+        },{
+            "field": "Hour",
+            "type": "nominal",
+            "title": "Hour"
+        },{
+            "field": "OBJECTID",
+            "aggregate": "count",
+            "type": "quantitative",
+            "title": "No. of Accidents"
+        }]
     }
   }
