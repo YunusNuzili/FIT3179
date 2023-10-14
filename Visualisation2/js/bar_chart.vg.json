@@ -5,12 +5,21 @@
     },
     "vconcat": [
       {
-        "width": 700,
-        "height": 320,
-        "mark": {"type": "bar", "width":{"band": 0.1}},
+        "width": 200,
+        "height": 150,
+        "mark": {"type": "bar", "width":{"band": 0.2}},
         "transform": [
           {
             "filter": "datum.DAY_OF_WEEK != ''"
+          },
+          {
+            "filter": "datum.LIGHT_CONDITION != 'Dark Street lights unknown'"
+          },
+          {
+            "filter": "datum.LIGHT_CONDITION != 'Unk.'"
+          },
+          {
+            "filter": "datum.LIGHT_CONDITION != 'Dark Street lights off'"
           }
         ],
         "encoding": {
@@ -24,13 +33,14 @@
           "field": "OBJECTID", 
           "type": "quantitative",
         "axis":{"title":"Number of Accidents"}},
+
           "tooltip" : [
             {"aggregate":"count",
             "field": "OBJECTID", 
             "type":"quantitative", 
             "title":"Number of Accidents"}
           ],
-          "color": {"value": "orange"}
+          "color": {"field":"LIGHT_CONDITION"}
         }
       }
     ]
