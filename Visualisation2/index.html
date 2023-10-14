@@ -60,7 +60,7 @@
       </div>
     </div>
       <div class="pure-u-1-2">
-        <h2>1.1 Distribution of Accidents</h2>
+        <h3>1.1 Distribution of Accidents</h3>
         <div id="scatter" class="vis-container"></div>
       </div>
 
@@ -71,8 +71,8 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-2">
-        <h2>2.1 Average Weekly Accidents</h2>
-        <div id="vis1" class="vis-container"></div>
+        <h3>2.1 Weekly and Hourly Accidents</h3>
+        <div id="heat_map" class="vis-container"></div>
       </div>
       <div class="pure-u-1-2">
         
@@ -83,9 +83,14 @@
             span. By exploring this comprehensive dataset, we aim to not only raise awareness 
             about the challenges posed by road safety but also provide valuable insights </p>
         </div>
+
+        <h3>2.2 Average Weekly Accidents with Light Condition</h3>
+        <div id="vis1" class="vis-container"></div>
       </div>
       
     </div>
+
+    <div class="page_blank2"></div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
@@ -143,6 +148,7 @@
     var specVis3 = "./js/temp_example.vg.json";
     var specVis4 = "./js/stacked_bar.vg.json";
     var specVis5 = "./js/scatter_plot.vg.json";
+    var specVis6 = "./js/heat_map.vg.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false });
 
@@ -158,6 +164,10 @@
     }).catch(console.error);
 
     vegaEmbed('#scatter', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#heat_map', specVis6, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
