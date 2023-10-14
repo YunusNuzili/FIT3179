@@ -7,7 +7,7 @@
       {
         "width": 200,
         "height": 150,
-        "mark": {"type": "bar", "width":{"band": 0.2}},
+        "mark": {"type": "bar", "width":{"band": 0.3}},
         "transform": [
           {
             "filter": "datum.DAY_OF_WEEK != ''"
