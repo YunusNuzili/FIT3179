@@ -5,7 +5,7 @@
     },
     "vconcat": [
       {
-        "width": 200,
+        "width": 220,
         "height": 150,
         "mark": {"type": "bar", "width":{"band": 0.3}},
         "transform": [
