@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Pie Chart with percentage_tooltip",
+    "data": {
+        "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"
+    },
+    "height":250,
+    "width":300,
+    "transform": [
+        {
+            "filter":"datum.ACCIDENT_TYPE != 'Other accident'"
+        },
+        {
+            "filter":"datum.ACCIDENT_TYPE != 'Fall from or in moving vehicle'"
+        },
+        {
+            "filter":"datum.ACCIDENT_TYPE != 'Struck animal'"
+        },
+        {
+            "filter":"datum.ACCIDENT_TYPE != 'collision with some other object'"
+        }
+    ],
+    "mark": {"type": "arc", 
+    "tooltip": true,
+"innerRadius":30},
+    "encoding": {
+      "theta": {
+        "aggregate":"count",
+        "field": "OBJECTID",
+    "stack":"normalize"},
+      "color": {"field": "ACCIDENT_TYPE", 
+      "type": "nominal",
+    "scale":{"scheme":"set2"},
+"legend":{"title": "Accident Type"}}
+    }
+}
