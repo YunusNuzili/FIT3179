@@ -1,12 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Number of people involved in Acccidents around Victoria",
-    "width": 500,
-    "height": 400,
+    "width": 450,
+    "height": 350,
     "params": [
         {
             "name": "Year_sel",
-            "value": 2019,
+            "value": 2018,
             "bind": {
               "input": "range",
               "min": 2017,
@@ -17,7 +17,7 @@
           },
       {
         "name": "zoom_level",
-        "value": 3500,
+        "value": 6300,
         "bind": {
           "input": "range",
           "min": 3500,
@@ -81,7 +81,7 @@
             "field": "TOTAL_PERSONS",
             "type": "quantitative",
             "scale": {"scheme": "browns"},
-            "legend": {"format": ".2s"}
+            "legend": {"title": "No. of People", "orient": "bottom-left","gradientLength": 250}
           },
           "tooltip": [
             {"field": "LGA_NAME", "type": "nominal", "title": "Suburb"},
