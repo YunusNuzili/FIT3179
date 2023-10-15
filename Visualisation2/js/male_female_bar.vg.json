@@ -5,7 +5,7 @@
         {"calculate": "datum.sex == 0 ? 'Male' : 'Female'", "as": "gender"},
         {"calculate": "datum.sex == 1 ? -datum.Value : datum.Value", "as": "signed_people"}
       ],
-      "width": 300,
+      "width": 370,
       "height": 70,
       "mark": "bar",
       "encoding": {
