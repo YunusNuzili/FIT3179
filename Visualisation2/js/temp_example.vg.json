@@ -49,7 +49,7 @@
     "layer": [
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/jss/ne_10m.topojson",
+          "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/js/ne_10m.topojson",
           "format": {"type": "topojson", "feature": "VIC_LOCALITY_POLYGON_SHP"}
         },
         "transform": [
