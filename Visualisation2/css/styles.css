@@ -13,12 +13,13 @@ body *{
   
   .page {
     width: 1000px;
-    height: 2600px;
+    height: 2700px;
     background-color: rgb(255, 255, 255);
     margin: auto;
     padding-top: 30px;
     padding-left: 19px;
     padding-right: 19px;
+    border-radius: 25px;
 
   }
   .page_blank{
@@ -47,10 +48,11 @@ body *{
     height: 57px;
     background-color: rgb(251, 234, 150);
     margin: auto;
-    padding-top: 19px;
+    padding-top: 14px;
     padding-left: 19px;
     padding-right: 19px;
-    padding-bottom: 28px;
+    padding-bottom: 37px;
+    border-radius: 25px;
   }
 
   h1{text-align: center;}
