@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A vertical box plot showing median, min, and max body mass of penguins.",
+    "data": {"url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"},
+    "layer" : [{"mark": {
+      "type": "boxplot",
+      "extent": "min-max"
+    },
+    "encoding": {
+      "y": {
+        "field": "DRIVER",
+        "type": "quantitative",
+        "scale": {"zero": false}
+      }}},
+      {"mark": {
+        "type": "boxplot",
+        "extent": "min-max"
+      },
+      "encoding": {
+        "y": {
+          "field": "PASSENGER",
+          "type": "quantitative",
+          "scale": {"zero": false}
+        }}}],"resolve": {"axis": {"x":"independent", "y":"independent"}, "scale": {"x": "independent", "y":"independent"}}
+  }

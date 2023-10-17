@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 320, 
+    "height": 250,
+    "data": {
+        "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"
+    },
+    "mark": "area",
+    "encoding": {
+      "x": {
+        "field": "Hour",
+        "type": "quantitative"
+      },
+      "y": {
+        "aggregate": "mean", "field": "NO_OF_VEHICLES",
+        "axis":{"title":"Average No. of Vehicles"}
+      },
+      "color": {
+        "field": "SEVERITY",
+        "scale": {"scheme": "paired"},
+        "legend":{"orient": "right"}
+      },
+      "tooltip":[
+        {"field":"Hour",
+        "type": "quantitative",
+    "title":"Hour"},
+{
+    "aggregate": "mean", 
+    "field": "NO_OF_VEHICLES",
+    "title":"Average No. of Vehicles"
+},{
+    "field": "SEVERITY",
+    "title": "Severity"
+}
+]
+    }
+  }
+  

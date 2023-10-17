@@ -1,0 +1,69 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {"url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"},
+    "params": [
+        {
+            "name": "Year_sel",
+            "value": 2018,
+            "bind": {
+              "input": "range",
+              "min": 2017,
+              "max": 2018,
+              "step": 1,
+              "name": "Year:  "
+            }
+          }],
+    "transform": [
+        {"filter": "datum.Year==Year_sel"},
+        {"calculate": "datum.Month == 1 ? 'January' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 2 ? 'February' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 3 ? 'March' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 4 ? 'April' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 5 ? 'May' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 6 ? 'June' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 7 ? 'July' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 8 ? 'August' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 9 ? 'September' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 10 ? 'October' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 11 ? 'November' : datum.Month_Name", "as": "Month_Name"},
+        {"calculate": "datum.Month == 12 ? 'December' : datum.Month_Name", "as": "Month_Name"}
+    ],
+      "encoding": {
+        "x": {"field": "Month_Name","type":"ordinal",
+        "scale":{"domain":["January","February","March","April","May","June","July","August","September","October","November","December"]}
+    }
+},
+
+    "layer": [
+        {
+        "mark": {
+        "type": "line",
+        "point":true
+      },
+      "encoding":
+      {
+        "y": 
+        {
+            "aggregate":"sum",
+            "field": "DRIVER", 
+            "type": "quantitative",
+            "scale":{"domain":[1100,1800]}
+        },
+        "color": 
+        {
+            "value": "orange"
+        },
+        "tooltip":
+        [
+            {
+                "aggregate":"sum",
+                "field":"DRIVER"
+            }
+        ]
+    }
+
+    }
+   ]
+  }
+  

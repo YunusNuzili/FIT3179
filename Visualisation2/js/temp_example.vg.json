@@ -1,0 +1,102 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 450,
+    "height": 350,
+    "params": [
+        {
+            "name": "Year_sel",
+            "value": 2018,
+            "bind": {
+              "input": "range",
+              "min": 2017,
+              "max": 2019,
+              "step": 1,
+              "name": "Year:  "
+            }
+          },
+      {
+        "name": "zoom_level",
+        "value": 6300,
+        "bind": {
+          "input": "range",
+          "min": 3500,
+          "max": 60000,
+          "step": 100,
+          "name": "Zoom: "
+        }
+      },
+      {
+        "name": "center_to",
+        "value": [145, -37.95],
+        "bind": {
+          "input": "select",
+          "options": [
+            [145, -37.95],
+            [144.3, -38.1],
+            [144.9, -36.7],
+            [147.1, -38.1]
+          ],
+          "labels": ["Melbourne CBD", "Geelong", "Bendigo", "Sale"],
+          "name": "Map Centre: "
+        }
+      }
+    ],
+    "projection": {
+      "type": "equirectangular",
+      "center": {"expr": "center_to"},
+      "scale": {"expr": "zoom_level"}
+    },
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/jss/ne_10m.topojson",
+          "format": {"type": "topojson", "feature": "VIC_LOCALITY_POLYGON_SHP"}
+        },
+        "transform": [
+          {
+            "calculate": "'Data is not available in ' + datum.properties.NAME",
+            "as": "note"
+          }
+        ],
+        "mark": {
+          "type": "geoshape",
+          "fill": "#ddd",
+          "stroke": "white",
+          "strokeWidth": 1
+        },
+        "encoding": {"tooltip": {"field": "note"}}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/YunusNuzili/FIT3179/main/Visualisation2/Dataset/Accidents_VIC3.csv"
+        },
+        "transform": [{"filter": "datum.Year==Year_sel"}],
+        "mark": {"type": "circle", "stroke": "#fff", "strokeWidth": 0.5},
+        "encoding": {
+          "longitude": {"field": "LONGITUDE", "type": "quantitative"},
+          "latitude": {"field": "LATITUDE", "type": "quantitative"},
+          "color": {
+            "field": "TOTAL_PERSONS",
+            "type": "quantitative",
+            "scale": {"scheme": "browns"},
+            "legend": {"title": "No. of People", "orient": "bottom-left","gradientLength": 250}
+          },"size":{
+            "field":"NO_OF_VEHICLES",
+            "legend":{"title":"No. of Vehicles","orient": "top"}
+          },
+          "tooltip": [
+            {"field": "LGA_NAME", "type": "nominal", "title": "Suburb"},
+            {
+                "aggregate": "sum",
+                "field": "TOTAL_PERSONS",
+                "type": "quantitative",
+                "title": "No. People involved",
+                "format": ","
+            },
+            {"field": "Year", "type": "quantitative", "title": "Year"}
+          ]
+        }
+      }
+    ],
+    "config": {}
+  }
